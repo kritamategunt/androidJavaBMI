@@ -13,6 +13,7 @@
     </ImageView>
 
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BMI Calculator" />
@@ -24,12 +25,14 @@
         android:paddingHorizontal="50dp">
 
         <RadioButton
+            android:id="@+id/radio_bth_male"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Male"></RadioButton>
 
         <RadioButton
+            android:id="@+id/radio_bth_female"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -37,6 +40,7 @@
     </RadioGroup>
 
     <EditText
+        android:id="@+id/edit_text_age"
         android:inputType="number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,6 +53,7 @@
         android:paddingHorizontal="50dp">
 
         <EditText
+            android:id="@+id/edit_text_feet"
             android:inputType="number"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -56,6 +61,7 @@
             android:hint="Feet" />
 
         <EditText
+            android:id="@+id/edit_text_inches"
             android:inputType="number"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -64,12 +70,14 @@
     </LinearLayout>
 
     <EditText
+        android:id="@+id/edit_text_weight"
         android:inputType="number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Weight(KG)" />
 
     <Button
+        android:id="@+id/bth_calculate_bmi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="50dp"
@@ -79,19 +87,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="50dp">
+        android:paddingHorizontal="50dp"
+        android:gravity="center">
 
         <TextView
+            android:id="@+id/text_view_number_bmi"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="23.4" />
+            android:text="23.4 - You are a healthy weight" />
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="You are a healthy weight" />
+
     </LinearLayout>
 
 </LinearLayout>
